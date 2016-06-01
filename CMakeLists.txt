@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
 project(qtermwidget)
 
@@ -37,7 +37,6 @@ include_directories(
     "${CMAKE_BINARY_DIR}"
 )
 add_definitions(-Wall)
-
 
 set(QTERMWIDGET_LIBRARY_NAME qtermwidget5)
 include(qtermwidget5_use)

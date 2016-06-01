@@ -1,0 +1,35 @@
+qtermwidget (0.6.0-7) trusty; urgency=high
+
+  * Add rules to setup environment for qt57
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Tue, 2 June 2016 16:20:00 -0500
+qtermwidget (0.6.0-6) trusty; urgency=high
+
+  * Add qt57base build dependency
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Tue, 2 June 2016 16:20:00 -0500
+qtermwidget (0.6.0-5) trusty; urgency=high
+
+  * Remove package.symbols file
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Tue, 2 June 2016 16:20:00 -0500
+qtermwidget (0.6.0-4) trusty; urgency=high
+
+  * Change cmake dependency to 2.8
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Tue, 2 June 2016 16:20:00 -0500
+qtermwidget (0.6.0-3) trusty; urgency=high
+
+  * Fix debian install files and symbols file.
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Tue, 2 June 2016 16:20:00 -0500
+qtermwidget (0.6.0-2) trusty; urgency=high
+
+  * Add debian install files and symbols file.
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Tue, 2 June 2016 15:20:00 -0500
+qtermwidget (0.6.0-1) trusty; urgency=high
+
+  * Initial release
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Tue, 31 May 2016 15:20:00 -0500
