@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+QT_BASE_DIR = /opt/qt59
+PATH := $(QT_BASE_DIR)/bin:$(PATH) dh binary-arch
+PKG_CONFIG_PATH := $(QT_BASE_DIR)/lib/pkgconfig/:$(PKG_CONFIG_PATH) dh binary-arch
+LD_LIBRARY_PATH := $(QT_BASE_DIR)/lib:$(LD_LIBRARY_PATH) dh binary-arch
+
+%:
+	dh $@ --buildsystem cmake \
+        --parallel \
+        --fail-missing
+
+
+
