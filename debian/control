@@ -1,0 +1,54 @@
+Source: qtermwidget59
+Maintainer: Levi Armstrong <levi.armstrong@gmail.com>
+Uploaders: Levi Armstrong <levi.armstrong@gmail.com>
+Section: libs
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               cmake (>= 2.8),
+               qt59base ( >= 5.9.0),
+               qt59tools ( >= 5.9.0),
+               libgl1-mesa-dev [!armel !armhf] | libgl-dev [!armel !armhf],
+               libgles2-mesa-dev [armel armhf] | libgles2-dev [armel armhf],
+               libglib2.0-dev,
+               libglu1-mesa-dev [!armel !armhf] | libglu-dev [!armel !armhf]
+Standards-Version: 3.9.8
+Vcs-Browser: https://github.com/Levi-Armstrong/qtermwidget/tree/debian/sid
+Vcs-Git: https://github.com/Levi-Armstrong/qtermwidget.git -b debian/sid
+Homepage: https://github.com/Levi-Armstrong/qtermwidget.git
+
+Package: libqtermwidget59-0
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         qtermwidget59-data (= ${source:Version}),
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libqtermwidget57-0
+Description: Terminal emulator widget for Qt 5.9 (shared libraries)
+ QTermWidget is a Unicode-enabled, embeddable Qt widget that can be used as
+ built-in console or terminal emulation widget.
+ .
+ This package provides the shared libraries.
+
+Package: libqtermwidget59-0-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends},
+         libqtermwidget59-0 (= ${binary:Version}),
+Conflicts: libqtermwidget57-0-dev
+Description: Terminal emulator widget for Qt 5.9 (development files)
+ QTermWidget is a Unicode-enabled, embeddable Qt widget that can be used as
+ built-in console or terminal emulation widget.
+ .
+ This package provides the development files.
+
+Package: qtermwidget59-data
+Architecture: all
+Depends: ${misc:Depends},
+Conflicts: libqtermwidget57-data
+Description: Terminal emulator widget for Qt 5.9 (data files)
+ QTermWidget is a Unicode-enabled, embeddable Qt widget that can be used as
+ built-in console or terminal emulation widget.
+ .
+ This package provides data files like keyboard layouts and color schemes.
+
+
