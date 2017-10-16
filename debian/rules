@@ -3,6 +3,7 @@
 
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CXXFLAGS_MAINT_APPEND+=-std=gnu++0x
 
 QT_BASE_DIR = /opt/qt59
 PATH := $(QT_BASE_DIR)/bin:$(PATH) dh binary-arch
