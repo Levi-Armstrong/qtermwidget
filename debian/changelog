@@ -1,3 +1,9 @@
+qtermwidget59 (0.6.1-0xenial2) xenial; urgency=high
+
+  * Rename conflict libqtermwidget57-data to qtermwidget57-data
+
+ -- Levi Armstrong <levi.armstrong@gmail.com>  Thu, 17 Nov 2017 15:20:00 -0500
+
 qtermwidget59 (0.6.1-0xenial1) xenial; urgency=high
 
   * Ubuntu Xenial Release 0.6.1 Qt 5.9

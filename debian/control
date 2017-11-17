@@ -44,7 +44,7 @@ Description: Terminal emulator widget for Qt 5.9 (development files)
 Package: qtermwidget59-data
 Architecture: all
 Depends: ${misc:Depends},
-Conflicts: libqtermwidget57-data
+Conflicts: qtermwidget57-data
 Description: Terminal emulator widget for Qt 5.9 (data files)
  QTermWidget is a Unicode-enabled, embeddable Qt widget that can be used as
  built-in console or terminal emulation widget.
